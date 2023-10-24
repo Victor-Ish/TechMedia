@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMedia</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-md nav__header py-3">
+            <h1 class="nav-brand">TechMedia</h1>
+            <div class="nav__wrapper">
+              <ul class="nav__content">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                <li class="dropdown dropdown__caret"><a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown">Features</a></li>
+                <ul class="dropdown-menu" id="menu">
+                  <li class="dropdown-item"><a class="" href="">Docs</a></li>
+                  <li class="dropdown-item"><a href="">Legal Services</a></li>
+                  <li class="dropdown-item"><a href="">Privacy</a></li>
+                  <li class="dropdown-item"><a href="">Stories</a></li>
+                </ul>
+                <li class="nav__item"><a href="#" class="nav__link">Blogs</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+              </ul>
+              <div class="social">
+                <i class="la las-search">social</i>
+                <i class="la las-search"></i>
+                <i class="la las-search"></i>
+                <i class="la las-search"></i>
+                <i class="la las-search"></i>
+              </div>
+            </div>
+            <div class="side__nav">
+              <span>Search</span>
+              <span>Content</span>
+            </div>
+            <!--harmburger-->
+            <div class="harmburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <!--modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="exampleModalLabel">Contact form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form__item">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control">
+              </div>
+              <div class="form__item">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control">
+              </div>
+              <div class="form__item">
+                  <label for="firstname" class="form-label">Subject</label>
+                  <input type="text" class="form-control">
+              </div>
+              <div class="form__item py-3">
+                <textarea class="" cols="57" rows="5" placeholder="Message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class=" yellow active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" class="yellow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" class="yellow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="">
+                <img src="images/pexels-cottonbro-7430332.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-block pt-5">
+                  <h2 class="text-white">Website Design</h2>
+                  <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id est repellendus et? 
+                    Veritatis alias ipsum ea aliquam, nam odit vel nulla? Molestias cumque quod ipsa placeat ullam optio, soluta consectetur?</p>
+                    <button class="explore__button text-white" id="btn"><a class="text-white text-decoration-none" href="#">Explore</a></button>
+                    <!-- Button trigger modal -->
+                    <button class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <a class="text-decoration-none text-dark" href="#">Contact us</a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="">
+                <img src="images/pexels-fauxels-3183181.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block pt-5">
+                  <h2 class="text-white">Web-Development</h2>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero cum cumque animi omnis illum, alias, 
+                    ipsam doloribus delectus eos possimus voluptatum dicta amet rerum dolorum iste quo autem nemo.</p>
+                    <button class="explore__button text-white" id="btn">Explore now</button>
+                    <button type="button" class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Contact us
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="">
+                <img src="images/pexels-fauxels-3184312.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block pt-5">
+                  <h2 class="text-white">Website Optimization</h2>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    At dignissimos quia dolorum placeat et repellendus officiis provident omnis odit alias praesentium, consectetur rem? Sint, amet. Necessitatibus asperiores perferendis aperiam incidunt.</p>
+                    <button class="explore__button text-white" id="btn">Explore</button>
+                    <button type="button" class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!--animation slide-->
+    <section>
+      <h4 class="text-center py-3">Trusted Partners</h4>
+      <div class="anime">
+        <div class="logos overflow-hidden">
+          <div class="logos__slide">  
+            <img src="images/logo1 (1).JPG" alt="">
+            <img src="images/logo1 (2).JPG" alt="">
+            <img src="images/logo1 (3).JPG" alt="">
+            <img src="images/logo1 (4).JPG" alt="">
+            <img src="images/logo1 (5).JPG" alt="">
+            <img src="images/logo1 (6).JPG" alt="">
+            <img src="images/wise.JPG" alt="">
+            <img src="images/hypster.JPG" alt="">
+          </div>
+          <div class="logos__slide">  
+            <img src="images/logo1 (1).JPG" alt="">
+            <img src="images/logo1 (2).JPG" alt="">
+            <img src="images/logo1 (3).JPG" alt="">
+            <img src="images/logo1 (4).JPG" alt="">
+            <img src="images/logo1 (5).JPG" alt="">
+            <img src="images/logo1 (6).JPG" alt="">
+            <img src="images/wise.JPG" alt="">
+            <img src="images/hypster.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--project details-->
+    <section>
+      <img src="images/wave (3).svg" alt="">
+      <div class="project__wrapper">
+        <div class="project__content container d-md-flex justify-content-center align-items-center gap-5 py-5 text-md-start text-center">
+          <img class="img-fluid w-50" src="images/tech.JPG" alt="">
+          <div class="project__test">
+            <h2 class="project__head text-danger">Project <Details></Details></h2>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque facere quis, 
+              rem consequuntur ad neque perspiciatis dolorem voluptatem eos? Sed unde maxime labore deserunt magnam harum deleniti quibusdam odio?</p>
+          </div>
+        </div>
+      </div>
+      
+    <!--why choose us-->
+    <section id="project">
+      <div class="projects__container container py-5">
+        <h2 class="text-danger transit">Why choose us</h2>
+          <div class="choose__container row justify-content-center align-items-center gap-md-0 gap-5">
+            <div class="choose__content col-md-5  col-xm-7">
+              <ul>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus vitae inventore distinctio libero debitis nihil nesciunt cupiditate! Nobis, praesentium?</li>
+                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus vitae inventore distinctio libero debitis nihil nesciunt cupiditate! Nobis, praesentium?</li>
+                <li class="item">We provide our clientele with the best of the work having the major priority to helping them achieve their goals and objectives.</li>
+                <li class="item">We deliver on time and makes sure that our client has gets full satisfaction.</li>
+              </ul>
+            </div>
+          <div class="image__wrapper col-md-4 col-xm-3">
+            <img src="images/pexels-fauxels-3184660.jpg" alt="" class="img-fluid img">
+          </div>
+          <div class="image__wrapper col-md-3 col-xm-2">
+            <img src="images/pexels-fauxels-3183159.jpg" alt="" class="img-fluid img">
+          </div>
+        </div>
+        </div>
+      <img src="images/wave (5).svg" id="curvy" alt="">
+    </section> 
+    <!--services section-->
+    <div class="services__container">
+      <div class="services__content">
+        <div class="container">
+          <h2 class="text-center py-5 text-danger">Our Auxillary services</h2>
+          <div class="row justify-content-center align-items-center gap-5 py-3 base px-5">
+            <div class="card bg-dark text-white col-md-3">
+              <div class="card-body">
+                <h4 class="card-title">Converts psd to Html</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Deserunt vero doloribus qui quod atque facere, cupiditate voluptatem earum repudiandae modi nulla quos reprehenderit officiis consectetur beatae adipisci odit, rerum quis!
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark text-white col-md-3">
+              <div class="card-body">
+                <h4 class="card-title">Fixes Html/Css bugs</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ipsa perspiciatis distinctio nihil impedit quod voluptatem assumenda consequuntur tempore quos eius suscipit ipsum cumque aliquam debitis minus, 
+                  temporibus ut culpa eligendi dicta reprehenderit consectetur excepturi? Reiciendis debitis quae quibusdam inventore dolor.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark text-white col-md-3">
+              <div class="card-body">
+                <h4 class="card-title">Seo Optimization</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Deserunt vero doloribus qui quod atque facere, cupiditate voluptatem earum repudiandae modi nulla quos reprehenderit officiis consectetur beatae adipisci odit, rerum quis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--client review-->
+    <div class="client__container">
+      <div class="client__review">
+        <h2 class="text-center py-3 text-danger">Client review</h2>
+        <div class="container">
+          <div class="">
+            <div class="testimonial">
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Necessitatibus praesentium aut quas voluptatem soluta odio eligendi nisi minus, veniam fugiat placeat iure minima cum explicabo nobis nulla optio exercitationem nostrum?
+              </p>
+            </div>
+              <img class="img-fluid review" src="images/Asheley.jpg" alt="">
+              <p class="lead text-center fw-bold py-2">Asheley Victoria</p>
+              <i class="la las-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--newsletter signin-->
+    <div class="newsletter__container container">
+      <div class="newletter row justify-content-center align-items-center g-2 text-center text-md-start py-4">
+        <div class="newsletter__item col-12 col-md-6 col-lg-4">
+        <h2 class="newletter__head text-md-start">Sign in our newsletter</h2>
+        </div>
+        <div class="newsletter__item col-sm">
+        <input type="text">
+        </div>
+        <div class="newsletter__item col-12 col-md-2">
+        <button class="btn btn-danger text-white">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--contact section-->
+  <section>
+    <div class="contact__container">
+      <div class="contact__content bg-dark py-5">
+        <div class="container">
+          <div class="row wrapper justify-content-center align-items-center">
+            <div class="contact__items col-lg-5 col-md-4 text-center text-md-start">
+              <span><h2 class="text-danger">Contact</h2></span>
+              <span class="py-1">victorish20@gmail.com</span>
+              <span class="py-1">234+9030232883</span>
+              <span class="py-1">University Of Nigeria Nsukka</span>
+              <a class="resume" href="images/" download>Download CV</a>
+              <div class="social__items">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+            </div>
+            <form class="col-lg-7 col-md-8">
+              <input type="text" for="name" placeholder="Full name">
+              <input type="email" for="name" placeholder="Email">
+              <textarea id="message" cols="" rows="5" placeholder="Message"></textarea>
+              <div class="submit__button">
+                <input class="text-white" id="submit" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Featured projects-->
+  <section>
+    <div class="featured__container container">
+      <div class="featured__content py-5">
+        <h2>Featured Proje3cts</h2>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+  <script src="https://kit.fontawesome.com/c309cf3bfe.js" crossorigin="anonymous"></script>
+</body>
+</html>
