@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Victor Ishmael">
     <title>TechMedia</title>
+    <link rel="icon" type="image/png" href="images/media.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="container-md nav__header py-3">
+        <div class="container-md nav__header py-3" id="home">
             <h1 class="nav-brand">TechMedia</h1>
             <div class="nav__wrapper">
-              <ul class="nav__content">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-                <li class="dropdown dropdown__caret"><a class="nav__link dropdown-toggle" href="#" data-bs-toggle="dropdown">Features</a></li>
-                <ul class="dropdown-menu" id="menu">
-                  <li class="dropdown-item"><a class="" href="">Docs</a></li>
-                  <li class="dropdown-item"><a href="">Legal Services</a></li>
-                  <li class="dropdown-item"><a href="">Privacy</a></li>
-                  <li class="dropdown-item"><a href="">Stories</a></li>
+              <div class="nav__container">
+                <ul class="nav__content">
+                  <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                  <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                  <div class="dropdown">
+                    <li class="list-style-none"><a class="dropdown-toggle" href="#features" data-bs-toggle="dropdown-toggle">Features</a></li>
+                    <div class="dropdown-menu">
+                      <span><a href="#" class="dropdown-item"></a></span>
+                      <span><a href="#" class="dropdown-item"></a></span>
+                      <span><a href="#" class="dropdown-item"></a></span>
+                    </div>
+                  </div>
+                  <li class="nav__item"><a href="#blogs" class="nav__link">Blogs</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                 </ul>
-                <li class="nav__item"><a href="#" class="nav__link">Blogs</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-              </ul>
+              </div>
               <div class="social">
-                <i class="la las-search">social</i>
-                <i class="la las-search"></i>
-                <i class="la las-search"></i>
-                <i class="la las-search"></i>
-                <i class="la las-search"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
               </div>
             </div>
             <div class="side__nav">
@@ -58,27 +63,28 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="https://formspree.io/f/xvojevvd" method="POST">
               <div class="form__item">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" name="fname">
               </div>
               <div class="form__item">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control">
+                  <input type="email" class="form-control" name="email">
               </div>
               <div class="form__item">
                   <label for="firstname" class="form-label">Subject</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" name="subject">
               </div>
               <div class="form__item py-3">
-                <textarea class="" cols="57" rows="5" placeholder="Message"></textarea>
+                <textarea class="" cols="" rows="" placeholder="Message"></textarea>
               </div>
+              <input class="text-white bg-danger border-0 py-1 radius-3" type="submit" value="Submit">
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger">Submit</button>
+            <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">Submit</button>--->
           </div>
         </div>
       </div>
@@ -95,12 +101,12 @@
                 <img src="images/pexels-cottonbro-7430332.jpg" class="d-block w-100 " alt="...">
                 <div class="carousel-caption d-block pt-5">
                   <h2 class="text-white">Website Design</h2>
-                  <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id est repellendus et? 
-                    Veritatis alias ipsum ea aliquam, nam odit vel nulla? Molestias cumque quod ipsa placeat ullam optio, soluta consectetur?</p>
-                    <button class="explore__button text-white" id="btn"><a class="text-white text-decoration-none" href="#">Explore</a></button>
+                  <p class="text-white">Techmedia offers a well-desigend websites, can help businesses
+                    increase their online visibility, gernerate leads and improve their brand image, Builds appealing websites that suits and conforms to individuals needs and easy to use.  </p>
+                    <button class="explore__button text-white" id="btn"><a class="text-white text-decoration-none" href="explore.html">Explore</a></button>
                     <!-- Button trigger modal -->
                     <button class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <a class="text-decoration-none text-dark" href="#">Contact us</a>
+                     Contact us
                   </button>
                 </div>
               </div>
@@ -108,9 +114,9 @@
                 <img src="images/pexels-fauxels-3183181.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block pt-5">
                   <h2 class="text-white">Web-Development</h2>
-                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero cum cumque animi omnis illum, alias, 
-                    ipsam doloribus delectus eos possimus voluptatum dicta amet rerum dolorum iste quo autem nemo.</p>
-                    <button class="explore__button text-white" id="btn">Explore now</button>
+                  <p class="text-white">Provides functionalities services and creating of a well, developing websites with custom codes and libraries that conforms to 
+                    concept utility and design expectations, coupled with other amazing features.</p>
+                    <button class="explore__button text-white" id="btn"><a class="text-white text-decoration-none" href="explore.html">Explore</a></button>
                     <button type="button" class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       Contact us
                   </button>
@@ -119,10 +125,11 @@
               <div class="carousel-item" data-bs-interval="">
                 <img src="images/pexels-fauxels-3184312.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block pt-5">
-                  <h2 class="text-white">Website Optimization</h2>
-                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    At dignissimos quia dolorum placeat et repellendus officiis provident omnis odit alias praesentium, consectetur rem? Sint, amet. Necessitatibus asperiores perferendis aperiam incidunt.</p>
-                    <button class="explore__button text-white" id="btn">Explore</button>
+                  <h2 class="text-white">Website Maintainance</h2>
+                  <p class="text-white">Brings rejuvenation and improve the functionalities of websites in keeping it up and running all times, to meeting the needs of its visitors, ensures 
+                    essential updates are made keeping sites in stable and healthy workflow.
+                  </p>
+                    <button class="explore__button text-white" id="btn"><a class="text-white text-decoration-none" href="explore.html">Explore</a></button>
                     <button type="button" class="contact__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       Contact us
                   </button>
@@ -175,13 +182,14 @@
         <div class="project__content container d-md-flex justify-content-center align-items-center gap-5 py-5 text-md-start text-center">
           <img class="img-fluid w-50" src="images/tech.JPG" alt="">
           <div class="project__test">
-            <h2 class="project__head text-danger">Project <Details></Details></h2>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque facere quis, 
-              rem consequuntur ad neque perspiciatis dolorem voluptatem eos? Sed unde maxime labore deserunt magnam harum deleniti quibusdam odio?</p>
+            <h2 class="project__head text-danger py-3">Project Details</h2>
+            <p class="">Collaborates in sychc with individuals, being in the loop during project implementation and development in order to develop and accurate designs that
+              that best suits the clients business and responds so well to its expected functionalities.
+            </p>
           </div>
         </div>
       </div>
-      
+      </section>
     <!--why choose us-->
     <section id="project">
       <div class="projects__container container py-5">
@@ -189,9 +197,9 @@
           <div class="choose__container row justify-content-center align-items-center gap-md-0 gap-5">
             <div class="choose__content col-md-5  col-xm-7">
               <ul>
-                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus vitae inventore distinctio libero debitis nihil nesciunt cupiditate! Nobis, praesentium?</li>
-                <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus vitae inventore distinctio libero debitis nihil nesciunt cupiditate! Nobis, praesentium?</li>
-                <li class="item">We provide our clientele with the best of the work having the major priority to helping them achieve their goals and objectives.</li>
+                <li class="item">TechMedia, we ascertain to delivering projects according to the requirments of our clients hence aiding them bring their ideas to reality.</li>
+                <li class="item">Builds smooth, responsive and good looking websites that is adaptable to all screen sizes devoid of any screen or browser compatibility issues.</li>
+                <li class="item">Provides our clientele with the best of the work having their major priority, to helping them achieve their goals and objectives.</li>
                 <li class="item">We deliver on time and makes sure that our client has gets full satisfaction.</li>
               </ul>
             </div>
@@ -206,17 +214,17 @@
       <img src="images/wave (5).svg" id="curvy" alt="">
     </section> 
     <!--services section-->
+    <section>
     <div class="services__container">
       <div class="services__content">
         <div class="container">
-          <h2 class="text-center py-5 text-danger">Our Auxillary services</h2>
+          <h2 class="text-center py-5 text-danger" id="services">Our Auxillary services</h2>
           <div class="row justify-content-center align-items-center gap-5 py-3 base px-5">
             <div class="card bg-dark text-white col-md-3">
               <div class="card-body">
                 <h4 class="card-title">Converts psd to Html</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Deserunt vero doloribus qui quod atque facere, cupiditate voluptatem earum repudiandae modi nulla quos reprehenderit officiis consectetur beatae adipisci odit, rerum quis!
+                <p class="card-text">Transforms your psd design to html using clean custom html written codes, hence providing you opportunities to transisting and bringing your ideasls
+                  to reality. 
                 </p>
               </div>
             </div>
@@ -224,9 +232,8 @@
               <div class="card-body">
                 <h4 class="card-title">Fixes Html/Css bugs</h4>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Ipsa perspiciatis distinctio nihil impedit quod voluptatem assumenda consequuntur tempore quos eius suscipit ipsum cumque aliquam debitis minus, 
-                  temporibus ut culpa eligendi dicta reprehenderit consectetur excepturi? Reiciendis debitis quae quibusdam inventore dolor.
+                  Finds and fixes html bugs maintaining your code and leaving you a bug-free experience and environment, ensuring you websites running compactibility over pages with no cross-browers 
+                  issues.
                 </p>
               </div>
             </div>
@@ -234,8 +241,8 @@
               <div class="card-body">
                 <h4 class="card-title">Seo Optimization</h4>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Deserunt vero doloribus qui quod atque facere, cupiditate voluptatem earum repudiandae modi nulla quos reprehenderit officiis consectetur beatae adipisci odit, rerum quis!
+                Provides you with a better search engine experience and most possible search keywords in relation to brand identity that makes your websites much more visible to potential coustomers
+                and users, flourshing your businees standardization to a much more higher level.
                 </p>
               </div>
             </div>
@@ -246,24 +253,31 @@
     <!--client review-->
     <div class="client__container">
       <div class="client__review">
-        <h2 class="text-center py-3 text-danger">Client review</h2>
+        <h2 class="text-center pt-5 text-danger">Client review</h2>
         <div class="container">
           <div class="">
             <div class="testimonial">
-              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Necessitatibus praesentium aut quas voluptatem soluta odio eligendi nisi minus, veniam fugiat placeat iure minima cum explicabo nobis nulla optio exercitationem nostrum?
+              <p class="text-center">Great works, very visually appealing with a modern and sleek design. Layouts are intuitive and have made it easy to navigate,
+                would higely recommend their services.
+             
               </p>
             </div>
-              <img class="img-fluid review" src="images/Asheley.jpg" alt="">
-              <p class="lead text-center fw-bold py-2">Asheley Victoria</p>
-              <i class="la las-star"></i>
+              <img class="img-fluid review mt-5" src="images/Asheley.jpg" alt="">
+              <p class="lead text-center fw-bold py-1">Asheley Victoria</p>
+              <div class="rating text-center py-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <!--newsletter signin-->
     <div class="newsletter__container container">
-      <div class="newletter row justify-content-center align-items-center g-2 text-center text-md-start py-4">
+      <div class="newletter row justify-content-center align-items-center g-2 text-center text-md-start py-5">
         <div class="newsletter__item col-12 col-md-6 col-lg-4">
         <h2 class="newletter__head text-md-start">Sign in our newsletter</h2>
         </div>
@@ -275,29 +289,28 @@
         </div>
       </div>
     </div>
-  </section>
+ </section>
   <!--contact section-->
   <section>
     <div class="contact__container">
-      <div class="contact__content bg-dark py-5">
+      <div class="contact__content bg-dark h-auto py-5">
         <div class="container">
           <div class="row wrapper justify-content-center align-items-center">
             <div class="contact__items col-lg-5 col-md-4 text-center text-md-start">
               <span><h2 class="text-danger">Contact</h2></span>
-              <span class="py-1">victorish20@gmail.com</span>
-              <span class="py-1">234+9030232883</span>
-              <span class="py-1">University Of Nigeria Nsukka</span>
-              <a class="resume" href="images/" download>Download CV</a>
+              <span class="py-1">
+                <i class="fa-solid fa-envelope brand pe-3 text-danger"></i>victorish20@gmail.com</span>
+              <span class="py-1">
+                <i class="fa-solid text-danger brand pe-3 fa-phone"></i>234+9030232883</span>
+              <span class="py-1">
+                <i class="fa-solid text-danger brand pe-3 fa-location-dot"></i>University Of Nigeria Nsukka</span>
+              <a class="resume mb-5 mt-3" href="profile.html" target="_blank">View profile</a>
               <div class="social__items">
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
               </div>
             </div>
-            <form class="col-lg-7 col-md-8">
-              <input type="text" for="name" placeholder="Full name">
-              <input type="email" for="name" placeholder="Email">
+            <form action="https://formspree.io/f/xvojevvd" class="col-lg-7 col-md-8" method="POST">
+              <input type="text" for="name" placeholder="Full name" name="fullname">
+              <input type="email" for="name" placeholder="Email" name="email">
               <textarea id="message" cols="" rows="5" placeholder="Message"></textarea>
               <div class="submit__button">
                 <input class="text-white" id="submit" type="submit" value="Send">
@@ -311,14 +324,124 @@
   <!--Featured projects-->
   <section>
     <div class="featured__container container">
-      <div class="featured__content py-5">
-        <h2>Featured Proje3cts</h2>
+      <div class="container featured__content py-5" id="portfolio">
+        <h2 class="text-danger">Featured Proje3cts</h2>
+        <div class="row">
+          <div class="owl-carousel owl-theme active">
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img src="images/project.JPG" alt="" class="card-img-top">
+                <div class="card-body bg-white">
+                  <h5 class="card-title text-secondary text-center">Techmedia</h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img src="images/IMG_5456.JPG" alt="" class="card-img-top">
+                <div class="card-body bg-white">
+                  <h5 class="card-title text-secondary text-center">Techmedia</h5>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card border-0 shadow">
+                <img src="images/scroll.JPG" alt="" class="card-img-top">
+                <div class="card-body bg-white">
+                  <h5 class="card-title text-secondary text-center">Techmedia</h5>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
       </div>
     </div>
   </section>
-  <script src="js/script.js" type="text/javascript"></script>
+  <!--About container-->
+  <section>
+    <div class="about__container">
+      <div class="about__contents">
+        <img src="images/wave (4).svg" alt="">
+        <div class="container about__items" id="blogs">
+          <h4 class="text-danger text-center py-4">Blogs</h4>
+          <div class="blog__img text-center">
+            <img class="blogx" src="images/blogx.jpg" alt="">
+            <p class="py-4">Techmedia enhances your brand or product recognition globally by equipping you with stunnig designs that accellerates your online precence
+              boosting and stimulating your overall identity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Features container--->
+  <section>
+    <div class="features__container">
+      <div class="features__content">
+        <div class="features__items" id="features">
+          <h3 class="text-center py-4">Features</h3>
+          <div class="container">
+            <div class="row justify-content-center align-items-center g-5 text-md-start">
+              <div class="col-md-3 col-sm-4 col-xm-12">
+                <h5 class="py-3">Product & Pricing</h5>
+                <span>Marketplace</span>
+                <span>Add-ons</span>
+                <span>Pricing</span>
+                <span>Realeases</span>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xm-12">
+                <h5 class="py-3">Partners</h5>
+                <span>Become a Partner</span>
+                <span>Partner Perks</span>
+                <span>pertner Directory</span>
+                <span>Partner Sign-in</span>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xm-12">
+                <h5 class="py-3">Support</h5>
+                <span>Need Help?</span>
+                <span>Documentations</span>
+                <span>Licence Verification</span>
+                <span>Ticket Support</span>
+              </div>
+              <div class="col-md-3 col-sm-2 col-xm-12">
+                <h5 class="py-3">Extras</h5>
+                <span>News</span>
+                <span>Blogs</span>
+                <span>Techmedia Conference</span>
+                <span>Feature Request</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__content">
+        <h4 class="text-center lead py-3">TechMedia</h4>
+        <p class="text-center secondary">Legal Policy/ Privacy Policy/ Transparency Policy</p>
+        <p class="text-center secondary">&copy;2023 TechMedia, LLC</p>
+        <div class="container footer__items">
+          <div class="social__icons text-center">
+            <i class="fa-brands fa-facebook h5"></i>
+            <i class="fa-brands fa-instagram h5"></i>
+            <i class="fa-brands fa-square-twitter h5"></i>
+            <i class="fa-brands fa-youtube h5"></i>
+            <i class="fa-brands fa-linkedin h5"></i>
+          </div>
+        </div>
+        <div class="scroll__content d-none">
+          <a class="text-decoration-none d-block my-3 scroll" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/fontawesome.min.js"></script>
-  <script src="https://kit.fontawesome.com/c309cf3bfe.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/c309cf3bfe.js" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

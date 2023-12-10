@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content__wrapper{
+    background: #010114;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content__items > p{
+    font-size: 5rem;
+}
+@media screen and (max-width: 768px){
+    .content__items > p{
+        font-size: 2rem;
+    }
+}
