@@ -61,13 +61,13 @@ ul.nav__content{
     justify-content: center;
     align-items: center;
     background: crimson;
-    width: auto;
+    width: 500px;
     height: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 150px;
-    padding: 0 1rem;
+    right: 0px;
+    padding: 0 0.5rem;
 }
 .nav__content li.nav__item a{
     position: relative;
@@ -619,6 +619,8 @@ form.col-lg-7{
         top: 150px;
     }
 }
-@media screen and (max-width: 998px) {
+@media screen and (min-width: 998px) {
 
     }
+    
+    

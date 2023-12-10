@@ -14,7 +14,6 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-alert('hello');
 
 const harmburger = document.querySelector('.harmburger')
 const navBar = document.querySelector('.nav__content')
