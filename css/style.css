@@ -320,6 +320,10 @@ input::placeholder, textarea::placeholder{
     padding: 0.5rem 1rem;
     display: block;
     width: fit-content;
+    border-radius: 5px;
+}
+.resume:hover{
+    color: #fff;
 }
 .card:first-child, .card:last-child{
     background: crimson !important;
